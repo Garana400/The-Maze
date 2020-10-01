@@ -1,3 +1,5 @@
+//these are the header file below
+
 #include "fixedobject.h"
 #include"room.h"
 #include"player.h"
@@ -21,7 +23,7 @@ fixedobject::fixedobject(string nam, string des, string ke,object* hidden,bool s
     state=stat;
 
 }
-
+//this is a function with return type bool and accept two parameters one is pointer and other one is bool
 bool fixedobject::act(agent* plyr,bool flag)
 {
     if(flag)
@@ -46,7 +48,7 @@ bool fixedobject::act(agent* plyr,bool flag)
                             if(str==key)
                             {
                                 cout<<"Now you can enter the room."<<endl;
-
+                                   //here when the str become equal to key and this block of code will execute and else part won`t be executed
                                 break;
                             }
                             else
